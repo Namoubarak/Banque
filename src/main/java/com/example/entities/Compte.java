@@ -12,11 +12,16 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import java.io.Serializable;
 import java.util.Collection;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "Type_Col",discriminatorType = DiscriminatorType.STRING,length = 10)
-public abstract class Compte {
+public abstract class Compte  implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	private String codecompte;
 	private Date datecreation;

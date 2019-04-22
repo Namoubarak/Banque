@@ -7,6 +7,10 @@ import javax.persistence.Entity;
 @Entity
 @DiscriminatorValue("CptCour")
 public class CompteCourant extends Compte{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private double decouvert;
 
 	public CompteCourant() {

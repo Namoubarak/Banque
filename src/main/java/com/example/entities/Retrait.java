@@ -8,6 +8,11 @@ import javax.persistence.Entity;
 @DiscriminatorValue("Ret")
 public class Retrait extends Operation{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public Retrait() {
 		super();
 		// TODO Auto-generated constructor stub

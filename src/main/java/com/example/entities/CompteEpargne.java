@@ -7,7 +7,11 @@ import javax.persistence.Entity;
 @Entity
 @DiscriminatorValue("CptEpar")
 public class CompteEpargne extends Compte{
-	 private double taux;
+	 /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private double taux;
 
 	public CompteEpargne() {
 		super();

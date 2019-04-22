@@ -18,6 +18,10 @@ import javax.persistence.ManyToOne;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="Type_Op",discriminatorType = DiscriminatorType.STRING,length=5)
 public abstract class Operation implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id @GeneratedValue
 	private Long numero;
 	private Date dateOperation;
